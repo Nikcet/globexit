@@ -2,14 +2,20 @@ import SearchBar from './components/SearchBar';
 import UserList from './components/UserList';
 import StatusMessage from './components/StatusMessage';
 import { useUsers } from './hooks/useUsers';
+import { useSearch } from './hooks/useSearch';
 import './App.css';
 
 function App() {
   const { users, loading, error, fetchUsers } = useUsers();
+  const { searchTerm, setSearchTerm } = useSearch(fetchUsers);
 
   return (
     <div className="app">
       <div className="container">
+        <SearchBar 
+          value={searchTerm}
+          onChange={setSearchTerm}
+        />
         
         {loading && (
           <StatusMessage 
