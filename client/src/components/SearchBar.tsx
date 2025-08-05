@@ -6,7 +6,6 @@ import './SearchBar.css';
 function SearchBar({
     value,
     onChange,
-    placeholder = "Поиск пользователей..."
 }: SearchBarProps) {
     return (
         <div className="search-container">
@@ -15,7 +14,6 @@ function SearchBar({
                     type="text"
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
-                    placeholder={placeholder}
                     className="search-input"
                 />
                 <img src={searchIcon} alt="search" className="search-icon" />
