@@ -6,7 +6,7 @@ import './UserList.css';
 function UserList({ users, onCardClick }: UserListProps) {
   return (
     <div className="user-list">
-      {users.map((user) => <UserCard key={user.id} user={user} onCardClick={onCardClick} />)}
+      {users.map((user) => <UserCard key={user.id} user={user} onCardClick={onCardClick}/>)}
     </div>
   );
 }

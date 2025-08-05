@@ -1,4 +1,3 @@
-import { memo } from 'react';
 import { UserCardProps } from '../types/components';
 import phoneIcon from '../assets/images/phone-icon.svg';
 import mailIcon from '../assets/images/mail-icon.svg';
@@ -23,4 +22,4 @@ function UserCard({ user, onCardClick }: UserCardProps) {
   );
 }
 
-export default memo(UserCard); 
+export default UserCard; 
