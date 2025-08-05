@@ -3,7 +3,6 @@ import UserList from './components/UserList';
 import StatusMessage from './components/StatusMessage';
 import { useUsers } from './hooks/useUsers';
 import { useSearch } from './hooks/useSearch';
-import './App.css';
 
 function App() {
   const { users, loading, error, fetchUsers } = useUsers();
