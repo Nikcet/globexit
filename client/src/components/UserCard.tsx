@@ -5,9 +5,9 @@ import mailIcon from '../assets/images/mail-icon.svg';
 import './UserCard.css';
 
 
-function UserCard({ user }: UserCardProps) {
+function UserCard({ user, onCardClick }: UserCardProps) {
   return (
-    <div className="user-card">
+    <div className="user-card" onClick={() => onCardClick(user)}>
       <h2 className="user-name">{user.name}</h2>
       <div className="user-info">
         <div className="info-row">
