@@ -1,5 +1,5 @@
 import { SearchBarProps } from '../types/components';
-import searchIcon from '../images/search-icon.svg';
+import searchIcon from '../assets/images/search-icon.svg';
 import './SearchBar.css';
 
 
