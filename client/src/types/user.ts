@@ -16,4 +16,9 @@ export interface ApiResponse {
     message: string;
     code: number;
   };
-} 
+}
+
+export interface CacheEntry {
+  data: User[];
+  timestamp: number;
+}
