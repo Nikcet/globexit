@@ -6,7 +6,7 @@ import { useSearch } from './hooks/useSearch';
 
 function App() {
   const { users, loading, error, fetchUsers } = useUsers();
-  const { searchTerm, setSearchTerm } = useSearch(fetchUsers);
+  const { searchTerm, setSearchTerm } = useSearch(fetchUsers, 500);
 
   return (
     <div className="app">

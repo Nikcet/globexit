@@ -1,15 +1,15 @@
 import { useState, useEffect, useCallback } from 'react';
 
-export function useSearch(onSearch: (term: string) => void, delay = 1000) {
+export function useSearch(onSearch: (term: string) => void, delay: number = 1000) {
   const [searchTerm, setSearchTerm] = useState('');
 
   const debouncedSearch = useCallback((term: string) => {
-      const timeoutId = setTimeout(() => {
-        onSearch(term);
-      }, delay);
+    const timeoutId = setTimeout(() => {
+      onSearch(term);
+    }, delay);
 
-      return () => clearTimeout(timeoutId);
-    },
+    return () => clearTimeout(timeoutId);
+  },
     [onSearch, delay]
   );
 
