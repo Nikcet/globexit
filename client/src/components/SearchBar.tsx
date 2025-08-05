@@ -10,7 +10,7 @@ function SearchBar({
 }: SearchBarProps) {
     return (
         <div className="search-container">
-            <form className="search-bar">
+            <div className="search-bar">
                 <input
                     type="text"
                     value={value}
@@ -19,7 +19,7 @@ function SearchBar({
                     className="search-input"
                 />
                 <img src={searchIcon} alt="search" className="search-icon" />
-            </form>
+            </div>
         </div>
     );
 }
