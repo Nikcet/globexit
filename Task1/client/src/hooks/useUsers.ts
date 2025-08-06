@@ -46,7 +46,7 @@ export function useUsers() {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [CACHE_DURATION]);
 
   useEffect(() => {
     loadUsers();
